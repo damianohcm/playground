@@ -1,0 +1,77 @@
+{
+    "stores": {
+        "tot": 3276,
+        "rows": [{
+            "id": 302068,
+            "title": "Gallion Group, Inc."
+        }, {
+            "id": 302612,
+            "title": "Gallion Group, Inc."
+        }]
+    },
+
+    "courses": {
+        "tot": 2134,
+        "rows": [{
+            "id": "guest-services",
+            "title": "Guest Services",
+            "sections": [{
+                    "id": "guest-first",
+                    "title": "Guest First Commitment"
+                }, {
+                    "id": "six-steps",
+                    "title": "The Six Steps of Guest Services"
+                }, {
+                    "id": "disabilities",
+                    "title": "Serving Guest with Disabilities"
+                }, {
+                    "id": "guest-expectations",
+                    "title": "Meeting Guest Expectations"
+                }]
+        }]
+    },
+
+    "people": {
+        "tot": 3276,
+        "rows": [{
+            "storeId": 302068,
+            "name": "Ella Cunningham",
+            "title": "Manager",
+            "courses": [{
+                "id": "guest-services",
+                "sections": [{
+                        "id": "guest-first",
+                        "value": 230
+                    }, {
+                        "id": "six-steps",
+                        "value": 340
+                    }, {
+                        "id": "disabilities",
+                        "value": 120
+                    }, {
+                        "id": "guest-expectations",
+                        "value": 98
+                    }]
+                }]
+        }, {
+            "name": "Max Garcia",
+            "title": "Crew Member",
+            "courses": [{
+                "id": "guest-services",
+                "sections": [{
+                    "id": "guest-first",
+                    "value": 34
+                }, {
+                    "id": "six-steps",
+                    "value": 43
+                }, {
+                    "id": "disabilities",
+                    "value": 234
+                }, {
+                    "id": "guest-expectations",
+                    "value": 54
+                }]
+            }]
+        }]
+    }
+}

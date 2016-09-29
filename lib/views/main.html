@@ -2,26 +2,19 @@ Main view
 
 <div class="container theme-showcase">
     <p>
-    <br/>Rows: {{data.result.rows.length}}
-    <br/><button ng-click="showAllColumns()">Show all columns</button>
+    <br/>Items: {{data.items.length}}
     </p>
 
-    <table class="table table-bordered">
-        <thead>
-            <tr dragula='"bag-one"'>
-                <th ng-repeat="c in data.columns" ng-show="c.show">
-                    {{c.title}} [{{c.show}}]
-                    <a ng-show="!c.locked" ng-click="hideCol(c)">X</a>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="row in data.result.rows">
-                <td ng-repeat="c in data.columns" ng-show="c.show" class="{{row[c.key].css}}">
-                    {{row[c.key].value}}
-                    <span ng-show="!c.locked && row[c.key].value !== 'N/A'"> [{{row[c.key].perc}}%] [{{row[c.key].css}}]</span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row-fluid">
+        <div class="span4" ng-repeat="item in data.items">
+            <div class="alert alert-info">
+                    <a href="#/{{item.key}}">
+                        [item.icon]
+                        <h3>{{item.title}}<h3>
+                        <p>{{item.subTitle}}</p>
+                    </a>
+            </div>
+        </div>
+    </div>
+    
 </div>

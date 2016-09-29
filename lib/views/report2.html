@@ -1,0 +1,28 @@
+{{title}}
+
+<div class="container theme-showcase">
+    <p>
+    <br/>Columns: {{model.columns.length}}
+    <br/>Rows: {{model.result.rows.length}}
+    <br/><button ng-click="showAllColumns()">Show all columns</button>
+    </p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr dragula='"bag-one"'>
+                <th ng-repeat="c in model.columns" ng-show="c.show">
+                    {{c.title}} [{{c.show}}]
+                    <a ng-show="!c.locked" ng-click="hideCol(c)">X</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in model.result.rows">
+                <td ng-repeat="c in model.columns" ng-show="c.show" class="{{row[c.id].css}}">
+                    {{row[c.id].value}}
+                    <span ng-show="!c.locked && row[c.id].value !== 'N/A'"> [{{row[c.id].perc}}%] [{{row[c.id].css}}]</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

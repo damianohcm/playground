@@ -1,0 +1,139 @@
+{
+    "columns": [{
+        "key": "category",
+        "position":  0,
+        "show": true,
+        "locked": true,
+        "title":  "Path"
+    }, {
+        "key": "columnA",
+        "position":  1,
+        "show": true,
+        "locked": false,
+        "title":  "Column A"
+    }, {
+        "key": "columnB",
+        "position":  2,
+        "show": true,
+        "locked": false,
+        "title":  "Column B"
+    }, {
+        "key": "columnC",
+        "position":  3,
+        "show": true,
+        "locked": false,
+        "title":  "Column C"
+    }, {
+        "key": "columnD",
+        "position":  4,
+        "show": true,
+        "locked": false,
+        "title":  "Column D"
+    }, {
+        "key": "columnE",
+        "position":  5,
+        "show": true,
+        "locked": false,
+        "title":  "Column E"
+    }],
+
+    "result": {
+        "tot": 10,
+        "rows": [{
+            "category": {
+                "value": "Awesome Learning Path"
+            },
+            "columnA": {
+                "value": "34"
+            },
+            "columnB":  {
+                "value": "12"
+            },
+            "columnC":  {
+                "value": "27"
+            },
+            "columnD":  {
+                "value": "117"
+            },
+            "columnE":  {
+                "value": "33"
+            }
+        }, {
+            "category": {
+                "value": "Some Learning Path"
+            },
+            "columnA":  {
+                "value": "66"
+            },
+            "columnB":  {
+                "value": "N/A"
+            },
+            "columnC":  {
+                "value": "9"
+            },
+            "columnD":  {
+                "value": "45"
+            },
+            "columnE":  {
+                "value": "11"
+            }
+        }, {
+            "category": {
+                "value": "Seasonal Learning Path"
+            },
+            "columnA":  {
+                "value": "24"
+            },
+            "columnB":  {
+                "value": "78"
+            },
+            "columnC":  {
+                "value": "95"
+            },
+            "columnD":  {
+                "value": "3"
+            },
+            "columnE":  {
+                "value": "N/A"
+            }
+        }, {
+            "category": {
+                "value": "Special Learning Path"
+            },
+            "columnA":  {
+                "value": "20"
+            },
+            "columnB":  {
+                "value": "20"
+            },
+            "columnC":  {
+                "value": "20"
+            },
+            "columnD":  {
+                "value": "20"
+            },
+            "columnE":  {
+                "value": "20"
+            }
+        }, {
+            "category": {
+                "value": "Unique Learning Path"
+            },
+            "columnA":  {
+                "value": "100"
+            },
+            "columnB":  {
+                "value": "100"
+            },
+            "columnC":  {
+                "value": "100"
+            },
+            "columnD":  {
+                "value": "100"
+            },
+            "columnE":  {
+                "value": "100"
+            }
+        }]
+    }
+}
