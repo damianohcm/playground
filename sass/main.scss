@@ -1,0 +1,23 @@
+@import 'imported';
+
+$perc100: #0C0;
+$perc99orless: #FF0;
+$perc50orless: #F90;
+$perc25orless: #C00;
+
+$blue: #3bbfce;
+$margin: 16px;
+
+.cell-100 {
+	background-color: $perc100;
+}
+.cell-99-or-less {
+	background-color: $perc99orless;
+}
+.cell-50-or-less {
+	background-color: $perc50orless;
+}
+.cell-25-or-less {
+	background-color: $perc25orless;
+	color: white;
+}

@@ -1,0 +1,17 @@
+li {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.cell-100 {
+  background-color: #0C0; }
+
+.cell-99-or-less {
+  background-color: #FF0; }
+
+.cell-50-or-less {
+  background-color: #F90; }
+
+.cell-25-or-less {
+  background-color: #C00;
+  color: white; }
