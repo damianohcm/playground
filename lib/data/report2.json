@@ -13,6 +13,19 @@
     "courses": {
         "tot": 2134,
         "rows": [{
+            "id": "welcome-to-dd",
+            "title": "Welcome to Dunkin' Donuts!",
+            "sections": [{
+                    "id": "welome-intro",
+                    "title": "Introduction"
+                }, {
+                    "id": "welcome-history",
+                    "title": "History"
+                }, {
+                    "id": "welcome-future",
+                    "title": "Future"
+                }]
+        }, {
             "id": "guest-services",
             "title": "Guest Services",
             "sections": [{
@@ -38,38 +51,127 @@
             "name": "Ella Cunningham",
             "title": "Manager",
             "courses": [{
+                "id": "welcome-to-dd",
+                "sections": [{
+                        "id": "welcome-intro",
+                        "value": 2
+                    }, {
+                        "id": "welcome-history",
+                        "value": 1
+                    }, {
+                        "id": "welcome-future",
+                        "value": 0
+                    }]
+                }, {
                 "id": "guest-services",
                 "sections": [{
                         "id": "guest-first",
-                        "value": 230
+                        "value": 2
                     }, {
                         "id": "six-steps",
-                        "value": 340
+                        "value": 2
                     }, {
                         "id": "disabilities",
-                        "value": 120
+                        "value": 1
                     }, {
                         "id": "guest-expectations",
-                        "value": 98
+                        "value": 0
                     }]
                 }]
         }, {
+            "storeId": 302068,
             "name": "Max Garcia",
             "title": "Crew Member",
             "courses": [{
+                "id": "welcome-to-dd",
+                "sections": [{
+                        "id": "welcome-intro",
+                        "value": 0
+                    }, {
+                        "id": "welcome-history",
+                        "value": 1
+                    }, {
+                        "id": "welcome-future",
+                        "value": 2
+                    }]
+                }, {
                 "id": "guest-services",
                 "sections": [{
                     "id": "guest-first",
-                    "value": 34
+                    "value": 2
                 }, {
                     "id": "six-steps",
-                    "value": 43
+                    "value": 1
                 }, {
                     "id": "disabilities",
-                    "value": 234
+                    "value": 0
                 }, {
                     "id": "guest-expectations",
-                    "value": 54
+                    "value": 0
+                }]
+            }]
+        }, {
+            "storeId": 302612,
+            "name": "John Doe",
+            "title": "Manager",
+            "courses": [{
+                "id": "welcome-to-dd",
+                "sections": [{
+                        "id": "welcome-intro",
+                        "value": 1
+                    }, {
+                        "id": "welcome-history",
+                        "value": 0
+                    }, {
+                        "id": "welcome-future",
+                        "value": 0
+                    }]
+                }, {
+                "id": "guest-services",
+                "sections": [{
+                        "id": "guest-first",
+                        "value": 2
+                    }, {
+                        "id": "six-steps",
+                        "value": 1
+                    }, {
+                        "id": "disabilities",
+                        "value": 0
+                    }, {
+                        "id": "guest-expectations",
+                        "value": 0
+                    }]
+                }]
+        }, {
+            "storeId": 302612,
+            "name": "Michael McDonald",
+            "title": "Crew Member",
+            "courses": [{
+                "id": "welcome-to-dd",
+                "sections": [{
+                        "id": "welcome-intro",
+                        "value": 2
+                    }, {
+                        "id": "welcome-history",
+                        "value": 1
+                    }, {
+                        "id": "welcome-future",
+                        "value": 0
+                    }]
+                }, {
+                "id": "guest-services",
+                "sections": [{
+                    "id": "guest-first",
+                    "value": 2
+                }, {
+                    "id": "six-steps",
+                    "value": 2
+                }, {
+                    "id": "disabilities",
+                    "value": 2
+                }, {
+                    "id": "guest-expectations",
+                    "value": 2
                 }]
             }]
         }]

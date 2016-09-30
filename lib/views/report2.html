@@ -16,11 +16,15 @@
                 </th>
             </tr>
         </thead>
-        <tbody>
-            <tr ng-repeat="row in model.result.rows">
+        <tbody ng-repeat="row in model.result.rows" ng-show="row.show">
+            <tr>
                 <td ng-repeat="c in model.columns" ng-show="c.show" class="{{row[c.id].css}}">
-                    {{row[c.id].value}}
-                    <span ng-show="!c.locked && row[c.id].value !== 'N/A'"> [{{row[c.id].perc}}%] [{{row[c.id].css}}]</span>
+                    {{row[c.id].value}}{{row[c.id].suffix}}
+                </td>
+            </tr>
+            <tr ng-repeat="child in row.children" ng-show="child.show">
+                <td ng-repeat="c in model.columns" ng-show="c.show" class="{{child[c.id].css}}">
+                    {{child[c.id].value}}{{child[c.id].suffix}}
                 </td>
             </tr>
         </tbody>
