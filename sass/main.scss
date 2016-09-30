@@ -5,6 +5,10 @@ $perc99orless: #FF0;
 $perc50orless: #F90;
 $perc25orless: #C00;
 
+$black: #000;
+$orange: #F90;
+$brown: saddlebrown;
+
 $blue: #3bbfce;
 $margin: 16px;
 
@@ -20,4 +24,39 @@ $margin: 16px;
 .cell-25-or-less {
 	background-color: $perc25orless;
 	color: white;
+}
+
+.pointer {
+	cursor:pointer!important;
+}
+.row-group {
+	background-color: navajowhite;
+	font-weight: bold;
+}
+.person-title {
+	display: block;
+	color: lighten($black, 50%);
+}
+
+.tr-head {
+	border: 0!important;
+	min-height:100px;
+	height:100px;
+}
+.th-category {
+	border: 0!important;
+	background-color: transparent;
+	min-width: 100px;
+}
+.th-summary {
+	background-color: $orange;
+	min-width: 100px;
+}
+.th-course {
+	color: white;
+	background-color: $brown;
+	min-width: 100px;
+}
+.th-section {
+	background-color: lighten($brown, 25%);
 }

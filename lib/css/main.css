@@ -15,3 +15,36 @@ li {
 .cell-25-or-less {
   background-color: #C00;
   color: white; }
+
+.pointer {
+  cursor: pointer !important; }
+
+.row-group {
+  background-color: navajowhite;
+  font-weight: bold; }
+
+.person-title {
+  display: block;
+  color: gray; }
+
+.tr-head {
+  border: 0 !important;
+  min-height: 100px;
+  height: 100px; }
+
+.th-category {
+  border: 0 !important;
+  background-color: transparent;
+  min-width: 100px; }
+
+.th-summary {
+  background-color: #F90;
+  min-width: 100px; }
+
+.th-course {
+  color: white;
+  background-color: saddlebrown;
+  min-width: 100px; }
+
+.th-section {
+  background-color: #e48139; }
