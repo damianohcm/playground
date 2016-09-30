@@ -41,6 +41,19 @@
                     "id": "guest-expectations",
                     "title": "Meeting Guest Expectations"
                 }]
+        }, {
+            "id": "crew-only",
+            "title": "Crew only",
+            "sections": [{
+                    "id": "crew-beginners",
+                    "title": "Crew Beginners"
+                }, {
+                    "id": "crew-interm",
+                    "title": "Crew Intermediary"
+                }, {
+                    "id": "crew-advanced",
+                    "title": "Crew Advanced"
+                }]
         }]
     },
 
@@ -95,21 +108,33 @@
                         "value": 2
                     }]
                 }, {
-                "id": "guest-services",
-                "sections": [{
-                    "id": "guest-first",
-                    "value": 2
+                    "id": "guest-services",
+                    "sections": [{
+                            "id": "guest-first",
+                            "value": 2
+                        }, {
+                            "id": "six-steps",
+                            "value": 1
+                        }, {
+                            "id": "disabilities",
+                            "value": 0
+                        }, {
+                            "id": "guest-expectations",
+                            "value": 0
+                        }]
                 }, {
-                    "id": "six-steps",
-                    "value": 1
-                }, {
-                    "id": "disabilities",
-                    "value": 0
-                }, {
-                    "id": "guest-expectations",
-                    "value": 0
+                    "id": "crew-only",
+                    "sections": [{
+                            "id": "crew-beginners",
+                            "value": 1
+                        }, {
+                            "id": "crew-interm",
+                            "value": 1
+                        }, {
+                            "id": "crew-advanced",
+                            "value": 2
+                        }]
                 }]
-            }]
         }, {
             "storeId": 302612,
             "name": "John Doe",

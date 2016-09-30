@@ -11,7 +11,7 @@
         <thead>
             <tr dragula='"bag-one"' class="tr-head">
                 <th ng-repeat="c in model.columns" ng-show="c.show" class="{{c.css}}">
-                    {{c.title}} [{{c.show}}]
+                    {{c.title}}
                     <a ng-show="!c.locked" ng-click="hideCol(c)">X</a>
                 </th>
             </tr>
