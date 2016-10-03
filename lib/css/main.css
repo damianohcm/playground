@@ -51,3 +51,6 @@ li {
 
 .m-l-sm {
   margin-left: 5px; }
+
+a {
+  cursor: pointer; }
