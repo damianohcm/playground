@@ -5,6 +5,9 @@
     <br/>Columns: {{model.columns.length}}
     <br/>Rows: {{model.result.rows.length}}
     <br/><button ng-click="showAllColumns()">Show all columns</button>
+    
+    <button class="pull-right m-l-sm" ng-show="!isTopLevel" ng-click="showTopLevel()">Back to Top Level</button>
+    <button class="pull-right" ng-show="changes.length > 0" ng-click="undoLastAction()">Undo</button>
     </p>
 
     <table class="table table-bordered">
@@ -13,7 +16,7 @@
                 <th ng-repeat="c in model.columns" ng-show="c.show" class="{{c.css}}">
                     {{c.name}} <div Group="{{c.isGroup}}"></div>
                     <a ng-show="!c.locked" ng-click="hideCol(c)">CLOSE</a>
-                    <a ng-show="!c.locked" ng-click="expandChildColumns(c)">EXP</a>
+                    <a ng-show="!c.locked && !c.isChild" ng-click="expandChildColumns(c)">EXP</a>
                 </th>
             </tr>
         </thead>
