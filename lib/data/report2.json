@@ -3,10 +3,10 @@
         "tot": 3276,
         "rows": [{
             "id": 302068,
-            "title": "Gallion Group, Inc."
+            "name": "Gallion Group, Inc."
         }, {
             "id": 302612,
-            "title": "Gallion Group, Inc."
+            "name": "Some other store, Inc."
         }]
     },
 
@@ -14,45 +14,45 @@
         "tot": 2134,
         "rows": [{
             "id": "welcome-to-dd",
-            "title": "Welcome to Dunkin' Donuts!",
+            "name": "Welcome to Dunkin' Donuts!",
             "sections": [{
                     "id": "welome-intro",
-                    "title": "Introduction"
+                    "name": "Introduction"
                 }, {
                     "id": "welcome-history",
-                    "title": "History"
+                    "name": "History"
                 }, {
                     "id": "welcome-future",
-                    "title": "Future"
+                    "name": "Future"
                 }]
         }, {
             "id": "guest-services",
-            "title": "Guest Services",
+            "name": "Guest Services",
             "sections": [{
                     "id": "guest-first",
-                    "title": "Guest First Commitment"
+                    "name": "Guest First Commitment"
                 }, {
                     "id": "six-steps",
-                    "title": "The Six Steps of Guest Services"
+                    "name": "The Six Steps of Guest Services"
                 }, {
                     "id": "disabilities",
-                    "title": "Serving Guest with Disabilities"
+                    "name": "Serving Guest with Disabilities"
                 }, {
                     "id": "guest-expectations",
-                    "title": "Meeting Guest Expectations"
+                    "name": "Meeting Guest Expectations"
                 }]
         }, {
             "id": "crew-only",
-            "title": "Crew only",
+            "name": "Crew only",
             "sections": [{
                     "id": "crew-beginners",
-                    "title": "Crew Beginners"
+                    "name": "Crew Beginners"
                 }, {
                     "id": "crew-interm",
-                    "title": "Crew Intermediary"
+                    "name": "Crew Intermediary"
                 }, {
                     "id": "crew-advanced",
-                    "title": "Crew Advanced"
+                    "name": "Crew Advanced"
                 }]
         }]
     },

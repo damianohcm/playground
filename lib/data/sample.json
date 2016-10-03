@@ -1,0 +1,213 @@
+{
+    "stores": [{
+        "id": 302068, /* store id */
+        "name": "Gallion Group, Inc.", /* store name - displays in the UI */
+        "people": [{ /* collection of people for this store*/
+                "id": 6543, /* person id */
+                "name": "Ella Cunningham", /* person name - displays in the UI */
+                "title": "Manager", /* person job title - displays in the UI */
+                "los": [{ /* collection of learning objects for this person*/
+                        "id": "welcome-1", /* Learning Object Id (in the front end we will find the parent Segment using the segments collection below) */
+                        "value": 2, /* value will have either 0 (Not Started) , 1 (In Progress), 2 (Completed) */
+                        "segmentId": "welcome-to-dd" /* would be much easier on the front end if we have the segmentId on each person learning object here */
+                    }, {
+                        "id": "welcome-2",
+                        "value": 1,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-3",
+                        "value": 0,
+                        "segmentId": "welcome-to-dd" 
+                    },{
+                        "id": "guest-services-1",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-2",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-3",
+                        "value": 1,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-4",
+                        "value": 0,
+                        "segmentId": "guest-services" 
+                    }] /* if a segment is N/A for a person, then its Learning Objects will not be present in the person "los" collection 
+                    In this case, since Ella Cunningham is a Manager, she won't have any "crea-only" learning object in this collection */
+            }, {
+                "id": 6544,
+                "name": "Max Garcia",
+                "title": "Crew Member",
+                "los": [{
+                        "id": "welcome-1",
+                        "value": 0,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-2",
+                        "value": 1,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-3",
+                        "value": 2,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "guest-services-1",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-2",
+                        "value": 1,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-3",
+                        "value": 0,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-4",
+                        "value": 0,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "crew-only-1", /* NOTE: in this example, since Max Garcia is a Crew Memmber, he has Learning Objects from crew-only segment */ 
+                        "value": 1,
+                        "segmentId": "crew-only"
+                    }, {
+                        "id": "crew-only-2",
+                        "value": 1,
+                        "segmentId": "crew-only"
+                    }, {
+                        "id": "crew-only-3",
+                        "value": 2,
+                        "segmentId": "crew-only"
+                    }]
+                }]
+            
+        }, {
+            "id": 302612,
+            "name": "Some other store, Inc.",
+            "people": [{
+                "id": 4322,
+                "name": "John Doe",
+                "title": "Manager",
+                "los": [{
+                        "id": "welcome-1",
+                        "value": 1,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-2",
+                        "value": 0,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-3",
+                        "value": 0,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "guest-services-1",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-2",
+                        "value": 1,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-3",
+                        "value": 0,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-4",
+                        "value": 0,
+                        "segmentId": "guest-services" 
+                    }]
+            }, {
+                "id": 4323,
+                "name": "Michael McDonald",
+                "title": "Crew Member",
+                "los": [{
+                        "id": "welcome-1",
+                        "value": 2,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-2",
+                        "value": 1,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "welcome-3",
+                        "value": 0,
+                        "segmentId": "welcome-to-dd" 
+                    }, {
+                        "id": "guest-services-1",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-2",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-3",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }, {
+                        "id": "guest-services-4",
+                        "value": 2,
+                        "segmentId": "guest-services" 
+                    }]
+                }]
+
+        }], /* end of stores */
+
+    "segments": [{ /* Segments collection will be an array with the lookup data for all Segments and related child Learning Objects.
+            Please note that this data might come from an existing API. */
+            "id": "welcome-to-dd", /* Segment id */
+            "name": "Welcome to Dunkin' Donuts!", /* Segment name - displays in the UI */
+            "los": [{ /* collection of child Learning Objects for this Segment */
+                    "id": "welcome-1", /* Learning Object Id */
+                    "name": "Introduction", /* Learning Object name - displays in the UI */
+                    "type": "Video" /* Learning Object type */
+                }, {
+                    "id": "welcome-2",
+                    "name": "History",
+                    "type": "Video"
+                }, {
+                    "id": "welcome-3",
+                    "name": "Future",
+                    "type": "Video"
+                }]
+        }, {
+            "id": "guest-services",
+            "name": "Guest Services",
+            "los": [{
+                    "id": "guest-services-1",
+                    "name": "Guest First Commitment",
+                    "type": "Online Class"
+                }, {
+                    "id": "guest-services-2",
+                    "name": "The Six Steps of Guest Services",
+                    "type": "Online Class"
+                }, {
+                    "id": "guest-services-3",
+                    "name": "Serving Guest with Disabilities",
+                    "type": "Online Class"
+                }, {
+                    "id": "guest-services-4",
+                    "name": "Meeting Guest Expectations",
+                    "type": "Online Class"
+                }]
+        }, {
+            "id": "crew-only",
+            "name": "Crew only",
+            "los": [{
+                    "id": "crew-only-1",
+                    "name": "Crew Beginners",
+                    "type": "Video"
+                }, {
+                    "id": "crew-only-2",
+                    "name": "Crew Intermediary",
+                    "type": "Video"
+                }, {
+                    "id": "crew-only-3",
+                    "name": "Crew Advanced",
+                    "type": "Video"
+                }]
+        }] /* end of Segments */
+}
