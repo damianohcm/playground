@@ -35,7 +35,9 @@ li {
 .th-category {
   border: 0 !important;
   background-color: transparent;
-  min-width: 100px; }
+  min-width: 100px;
+  width: 200px;
+  max-width: 200px; }
 
 .th-summary {
   background-color: #F90;
