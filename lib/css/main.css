@@ -57,3 +57,7 @@ li {
 
 a {
   cursor: pointer; }
+
+i.fa {
+  font-size: 14pt;
+  color: #F90; }
