@@ -5,6 +5,9 @@ $perc99orless: #FF0;
 $perc50orless: #F90;
 $perc25orless: #C00;
 
+$complete: #9E9;
+$inprogress: #FF9;
+
 $black: #000;
 $orange: #F90;
 $brown: saddlebrown;
@@ -76,4 +79,12 @@ a {
 i.fa {
 	font-size:14pt;
 	color: $orange;	
+}
+
+td.complete {
+	background-color: $complete;
+}
+
+td.in-progress {
+	background-color: $inprogress;
 }
