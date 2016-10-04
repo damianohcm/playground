@@ -62,8 +62,14 @@ i.fa {
   font-size: 14pt;
   color: #F90; }
 
-td.complete {
+td.completed {
   background-color: #9E9; }
 
 td.in-progress {
   background-color: #FF9; }
+
+td.col-group.row-group.completed {
+  background-color: #2cdc2c; }
+
+td.col-group.row-group.in-progress {
+  background-color: #ffff1a; }

@@ -5,7 +5,7 @@ $perc99orless: #FF0;
 $perc50orless: #F90;
 $perc25orless: #C00;
 
-$complete: #9E9;
+$completed: #9E9;
 $inprogress: #FF9;
 
 $black: #000;
@@ -81,10 +81,18 @@ i.fa {
 	color: $orange;	
 }
 
-td.complete {
-	background-color: $complete;
+td.completed {
+	background-color: $completed;
 }
 
 td.in-progress {
 	background-color: $inprogress;
+}
+
+td.col-group.row-group.completed {
+	background-color: darken($completed, 25%);
+}
+
+td.col-group.row-group.in-progress {
+	background-color: darken($inprogress, 25%);
 }

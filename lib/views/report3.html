@@ -43,7 +43,8 @@
             </thead>
             <tbody ng-repeat="row in model.result.rows" ng-show="row.show">
                 <tr class="row-group">
-                    <td class="{{row[c.id].css}} pointer" ng-repeat="c in model.columns" ng-show="c.show" ng-click="toggleChildRows(model, row)">
+                    <td ng-repeat="c in model.columns" class="pointer {{row[c.id].css}}" 
+                        ng-show="c.show" ng-click="toggleChildRows(model, row)">
                         <i ng-if="c.position === 0 && row.isGroup" class="glyphicon glyphicon-triangle-{{row.isCollapsed ? 'top' : 'bottom'}}"></i>
                         <a class="pull-right" ng-if="c.position === 0" ng-click="hideRow(row)"><i class="fa fa-minus-circle"></i></a>
                         {{row[c.id].value}}{{row[c.id].suffix}}
