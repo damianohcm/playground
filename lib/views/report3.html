@@ -21,7 +21,7 @@
         <table class="table table-bordered m-t-sm">
             <thead>
                 <tr class="tr-head">
-                    <th ng-repeat="c in model.columns" ng-show="c.show" class="{{c.css}} {{c.position === 0 ? 'first' : ''}}">
+                    <th ng-repeat="c in model.columns" ng-show="c.show" class="{{c.css}}">
                         <!-- begin: column header popover -->
                         <div class="pull-right" ng-if="!c.locked">
                             <div ng-if="!c.isChild" ng-init="c=c" 
