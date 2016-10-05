@@ -14,7 +14,7 @@
             <button class="m-l-sm" ng-show="topLevelCol" ng-click="showTopLevel()">Back to Top Level</button>
         </div>
 
-        <h3 ng-show="topLevelCol">(Segment): {{topLevelCol && topLevelCol.name}}</h3>
+        <h5 ng-show="topLevelCol">Now Viewing: <b>{{topLevelCol && topLevelCol.name}}</b></h5>
     </div>
 
     <div class="m-t-sm">
