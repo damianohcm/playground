@@ -106,7 +106,7 @@ td.col-group.na {
 	background-color: $na;
 }
 td.col-group.zero {
-	background-color: $zero;
+	background-color: darken($zero, 15%);
 }
 
 /* child columns */
@@ -120,5 +120,5 @@ td.col-child.na {
 	background-color: lighten($na, 15%);
 }
 td.col-child.zero {
-	background-color: lighten($zero, 16%);
+	background-color: $zero;
 }

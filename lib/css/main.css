@@ -73,7 +73,7 @@ td.col-group.na {
   background-color: #CCC; }
 
 td.col-group.zero {
-  background-color: #FFF; }
+  background-color: #d9d9d9; }
 
 /* child columns */
 td.col-child.completed {
@@ -86,4 +86,4 @@ td.col-child.na {
   background-color: #f2f2f2; }
 
 td.col-child.zero {
-  background-color: white; }
+  background-color: #FFF; }
