@@ -1,41 +1,24 @@
 @import 'imported';
 
-$perc100: #0C0;
-$perc99orless: #FF0;
-$perc50orless: #F90;
-$perc25orless: #C00;
-
-$completed: #9E9;
-$inprogress: #FF9;
+$category: #F0E0C6;
+$completed: #60BF00;
+$inprogress: #E8DC74;
+$na: #CCC;
+$zero: #FFF;
 
 $black: #000;
-$orange: #F90;
-$brown: saddlebrown;
+$orange: #FF8000;
+$brown: #693900;
+$lightbrown: #BE854C;
 
 $blue: #3bbfce;
 $margin: 16px;
 
-.cell-100 {
-	background-color: $perc100;
-}
-.cell-99-or-less {
-	background-color: $perc99orless;
-}
-.cell-50-or-less {
-	background-color: $perc50orless;
-}
-.cell-25-or-less {
-	background-color: $perc25orless;
-	color: white;
-}
 
 .pointer {
 	cursor:pointer!important;
 }
-.row-group {
-	background-color: navajowhite;
-	font-weight: bold;
-}
+
 .person-title {
 	display: block;
 	color: lighten($black, 50%);
@@ -47,13 +30,15 @@ $margin: 16px;
 	height:100px;
 }
 .th-category {
-	border: 0!important;
+	color: white;
 	background-color: transparent;
 	min-width: 200px;
 	width: 250px;
 	max-width: 250px;
+	border: 0!important;
 }
 .th-summary {
+	color: white;
 	background-color: $orange;
 	min-width: 200px;
 	width: 250px;
@@ -65,7 +50,8 @@ $margin: 16px;
 	min-width: 100px;
 }
 .th-section {
-	background-color: lighten($brown, 25%);
+	color: white;
+	background-color: $lightbrown;
 }
 
 .m-l-sm {
@@ -85,18 +71,54 @@ i.fa {
 	color: $orange;	
 }
 
-td.completed {
+/*
+.row-group {
+	background-color: navajowhite;
+	font-weight: bold;
+}
+*/
+
+td.category {
+	background-color: $category;
+	font-weight: bold;
+}
+// td.completed {
+// 	background-color: $completed;
+// }
+// td.in-progress {
+// 	background-color: $inprogress;
+// }
+// td.na {
+// 	background-color: $na;
+// }
+// td.zero {
+// 	background-color: $zero;
+// }
+
+/* group columns */
+td.col-group.completed {
 	background-color: $completed;
 }
-
-td.in-progress {
+td.col-group.in-progress {
 	background-color: $inprogress;
 }
-
-td.col-group.row-group.completed {
-	background-color: darken($completed, 25%);
+td.col-group.na {
+	background-color: $na;
+}
+td.col-group.zero {
+	background-color: $zero;
 }
 
-td.col-group.row-group.in-progress {
-	background-color: darken($inprogress, 25%);
+/* child columns */
+td.col-child.completed {
+	background-color: lighten($completed, 15%);
+}
+td.col-child.in-progress {
+	background-color: lighten($inprogress, 15%);
+}
+td.col-child.na {
+	background-color: lighten($na, 15%);
+}
+td.col-child.zero {
+	background-color: lighten($zero, 16%);
 }

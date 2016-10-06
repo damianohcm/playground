@@ -10,7 +10,7 @@
 <div class="container theme-showcase">
     <div style="height:30px;min-height:30px">
        <div class="pull-right">
-            <button ng-show="undoService.undoState.length > 0" ng-click="undoService.undoLastAction()">Undo</button>
+            <button ng-show="undoService.undoState.length > 0" ng-click="undoLastAction()">Undo</button>
             <button class="m-l-sm" ng-show="topLevelColumn" ng-click="backToTopLevel()">Back to Top Level</button>
         </div>
 
@@ -42,7 +42,7 @@
                 </tr>
             </thead>
             <tbody ng-repeat="row in model.result.rows" ng-show="row.show">
-                <tr class="row-group">
+                <tr>
                     <td ng-repeat="c in model.columns" class="pointer {{row[c.key].css}}" 
                         ng-show="c.show" ng-click="toggleChildRows(model, row)">
                         <i ng-if="c.position === 0 && row.isGroup" class="glyphicon glyphicon-triangle-{{row.isCollapsed ? 'top' : 'bottom'}}"></i>
