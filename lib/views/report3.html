@@ -7,14 +7,14 @@
     </div>
 </script>
 
-<div class="containertheme-showcase">
+<div class="container theme-showcase">
     <div style="height:30px;min-height:30px">
        <div class="pull-right">
             <button ng-show="undoService.undoState.length > 0" ng-click="undoService.undoLastAction()">Undo</button>
-            <button class="m-l-sm" ng-show="topLevelCol" ng-click="showTopLevel()">Back to Top Level</button>
+            <button class="m-l-sm" ng-show="topLevelColumn" ng-click="backToTopLevel()">Back to Top Level</button>
         </div>
 
-        <h5 ng-show="topLevelCol">Now Viewing: <b>{{topLevelCol && topLevelCol.name}}</b></h5>
+        <h5 ng-show="topLevelColumn">Now Viewing: <b>{{topLevelColumn && topLevelColumn.name}}</b></h5>
     </div>
 
     <div class="m-t-sm">
