@@ -75,10 +75,6 @@
                         "id": "crew-only-2",
                         "value": 1,
                         "segmentId": "crew-only"
-                    }, {
-                        "id": "crew-only-3",
-                        "value": 2,
-                        "segmentId": "crew-only"
                     }]
                 }]
             
