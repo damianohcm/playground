@@ -12,6 +12,8 @@ const personLoModel = {
     segmentId: ''
 };
 
+var rand;
+
 dataModel.stores.forEach((store) => {
     console.log('store', store.id);
     store.people.forEach((person) => {
@@ -19,16 +21,21 @@ dataModel.stores.forEach((store) => {
 
         dataModel.segments.forEach((segment) => {
             console.log('segment', segment.id);
+
+            // occcasionally mark the whole segment completed so we can see the green color on the summaries
+            rand = Math.random();
+            var segmCheck = rand > 0.7 ? 2 : 0;
+
             segment.los.forEach((lo) => {
                 console.log('lo', lo);
 
                 if (person.title === 'Manager' && lo.id.indexOf('crew') > -1) {
                     // ignore
                 } else {
-                    var rand = Math.random();
+                    rand = Math.random();
                     personLoModel.id = lo.id;
                     personLoModel.segmentId = segment.id;
-                    personLoModel.value =  rand > 0.7 ? 2 : rand > 0.3 ? 1 : 0;
+                    personLoModel.value = segmCheck === 2 || rand > 0.7 ? 2 : rand > 0.3 ? 1 : 0;
                     
                     person.los.push(JSON.parse(JSON.stringify(personLoModel)));
                 }
