@@ -42,14 +42,14 @@
 
                             <span>{{c.name}}<span>
                         </div>
-                        <button ng-if="c.position === 0">Export CSV</button>
+                        <button ng-if="c.position === 0" ng-click="exportToCsv()">Export CSV</button>
                     </th>
                 </tr>
             </thead>
             <tbody ng-repeat="row in model.result.rows" ng-show="row.show">
                 <tr>
                     <td ng-repeat="c in model.columns" 
-                        ng-animate="row[c.key].value" ng-class="'flash ' + flashCss('pointer ' + row[c.key].css, row[c.key].value, !c.show, c.position === 0)" 
+                        ng-class="'flash ' + flashCss('pointer ' + row[c.key].css, row[c.key].value, !c.show, c.position === 0)" 
                         ng-click="toggleChildRows(model, row)">
                         <i ng-if="c.position === 0 && row.isGroup" class="glyphicon glyphicon-triangle-{{row.isCollapsed ? 'bottom' : 'top'}}"></i>
                         <a class="pull-right" ng-if="c.position === 0" ng-show="displayHideRow()" ng-click="hideRow(row)"><i class="fa fa-minus-circle"></i></a>
@@ -69,6 +69,7 @@
     </div>
 
     <p>
+        <!-- nganimate="row[c.key].value" -->
         <br/>Columns: {{model.columns.length}}
         <br/>Rows: {{model.result.rows.length}}
         <br/><button ng-click="showAllColumns()">Show all columns</button>
