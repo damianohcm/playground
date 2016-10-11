@@ -24,6 +24,7 @@
             <thead>
                 <tr class="tr-head">
                     <th ng-repeat="c in model.columns" ng-show="c.show" ng-class="c.css + (c.position === 0 ? ' first' : '')">
+                        <button ng-if="c.position === 0"" ng-click="exportToCsv()">Export CSV</button>
                         <div ng-if="c.position > 0">
                             <!-- begin: column header popover -->
                             <div class="pull-right" ng-if="!c.locked">
@@ -42,7 +43,6 @@
 
                             <div class="clear">{{c.name}}<div>
                         </div>
-                        <button ng-if="c.position === 0" ng-click="exportToCsv()">Export CSV</button>
                     </th>
                 </tr>
             </thead>
