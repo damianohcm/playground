@@ -180,7 +180,7 @@ td.col-child.summary.zero {
 
 td.flash.ng-animate {
   color: white;
-  background-color: red; }
+  background-color: #e49; }
 
 td.flash {
   -webkit-transition: background-color 0.5s ease-in, color 0.5s ease-in;
