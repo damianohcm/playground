@@ -207,6 +207,10 @@ td.hidden {
   text-align: center;
   line-height: 48px; }
 
+td.col-group.person > .row-text {
+  margin: 0;
+  font-weight: normal; }
+
 .col-group.summary > .row-text {
   color: white; }
 
@@ -227,20 +231,23 @@ td.hidden {
   text-align: center;
   line-height: 48px; }
 
-td.person > .row-text {
-  margin-left: 24px;
-  font-size: 16px; }
+td.person {
+  padding: 10px 5px 0 5px !important; }
 
-td.person > .row-text > span {
+td.person > .row-text {
+  margin-left: 24px; }
+
+td.person > .row-text > span.value {
+  color: #000; }
+
+td.person > .row-text > span.person {
+  font-size: 16px;
   color: #000; }
 
 td.person > .row-text > span.person-title {
   display: block;
   /*color: #4A4A4A; */
   color: #666666; }
-
-td.col-group.person > .row-text {
-  margin: 0; }
 
 .row-icon {
   width: 20px;

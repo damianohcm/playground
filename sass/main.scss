@@ -262,6 +262,11 @@ td.hidden {
 	line-height: 48px;
 }
 
+td.col-group.person > .row-text {
+	margin: 0;
+	font-weight: normal;
+}
+
 .col-group.summary > .row-text {
 	color:white;
 }
@@ -285,22 +290,23 @@ td.hidden {
 	line-height: 48px;
 }
 
-
+td.person {
+	padding: 10px 5px 0 5px!important;
+}
 td.person > .row-text {
 	margin-left: 24px;
-	font-size: 16px;
 }
-td.person > .row-text > span {
+td.person > .row-text > span.value {
+	color: $black;
+}
+td.person > .row-text > span.person {
+	font-size: 16px;
 	color: $black;
 }
 td.person > .row-text > span.person-title {
 	display: block;
 	/*color: #4A4A4A; */
 	color: lighten($black, 40%);
-}
-
-td.col-group.person > .row-text {
-	margin: 0;
 }
 
 .row-icon {
