@@ -1,6 +1,6 @@
 {{title}}
 
- <script type="text/ng-template" id="colHeaderPopoverTemplate.html">
+<script type="text/ng-template" id="colHeaderPopoverTemplate.html">
     <div style="color:black">
         <div><a ng-if="!c.locked && !c.isChild" ng-click="expandChildColumns(c)"><i class="fa fa-expand"></i> Expand</a></div>
         <div><a ng-if="!c.locked" ng-show="displayHideGroupCol()" ng-click="hideCol(c)"><i class="fa fa-minus-circle"></i> Remove</a></div>
@@ -15,9 +15,10 @@
                 <span>{{modifiedMessage()}}</span>
             </div>
             <div class="pull-right m-t-sm">
-                <button class="undo small" ng-show="undoService.undoState.length > 0" ng-click="undoLastAction()"><i class="fa fa-undo"></i> Undo {{undoService.getLastActionMessage()}}</button>
-                <button class="reset small m-l-sm" ng-show="undoService.undoState.length > 0" ng-click="undoAllActions()"><i class="fa fa-refresh"></i> Reset</button>
-                <button class="back-to-top small m-l-sm" ng-show="topLevelColumn" ng-click="backToTopLevel()"><i class="fa fa-arrow-left"></i> Back to Top Level</button>
+                <button class="undo small" ng-show="undoService.undoState.length > 0" ng-click="undoLastAction()" title="Undo {{undoService.getLastActionMessage()}}">
+                    <i class="fa fa-undo"></i> Undo <span style="text-transform:none">({{undoService.getLastActionMessage()}})</span></button>
+                <button class="reset small m-l-sm" ng-show="undoService.undoState.length > 0" ng-click="undoAllActions()" title="Reset"><i class="fa fa-refresh"></i> Reset</button>
+                <button class="back-to-top small m-l-sm" ng-show="topLevelColumn" ng-click="backToTopLevel()" "Back to top level"><i class="fa fa-arrow-left"></i> Back to Top Level</button>
             </div>
        </div>
     </div>
@@ -28,7 +29,7 @@
             <thead>
                 <tr class="tr-head">
                     <th ng-repeat="c in model.columns" ng-show="c.show" ng-class="c.css + (c.position === 0 ? ' first' : '')">
-                        <button class="brand" ng-if="c.position === 0" ng-click="exportToCsv()">Export CSV</button>
+                        <button class="brand" ng-if="c.position === 0" ng-click="exportToCsv()" title="Export current view to CSV file">Export CSV</button>
                         <div ng-if="c.position > 0">
                             <!-- begin: column header popover -->
                             <div class="pull-right" ng-if="!c.locked">
