@@ -88,6 +88,7 @@ i.fa {
 .table > tbody > tr > td {
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	padding: 5px;
+	vertical-align: middle!important;;
 }
 .table > thead > tr > th.first {
 	border-top-width: 0!important;
@@ -290,9 +291,6 @@ td.col-group.person > .row-text {
 	line-height: 48px;
 }
 
-td.person {
-	padding: 10px 5px 0 5px!important;
-}
 td.person > .row-text {
 	margin-left: 24px;
 }
