@@ -12,7 +12,7 @@
 
 		<title>Test</title> 
 		<link href="css/bootstrap.min.css" rel="stylesheet"/>
-		<link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+		<!--link href="css/bootstrap-theme.min.css" rel="stylesheet"/-->
 		<link href="css/font-awesome.min.css" rel="stylesheet"/>
 		<!--link href="css/dragula.min.css" rel="stylesheet"/-->
 		<link href="css/ui-bootstrap-custom-2.1.4-csp.css" rel="stylesheet"/>
@@ -24,18 +24,24 @@
 		<script src="/js/angular-animate.min.js"></script>
 		<!--script src="/js/angular-sanitize.min.js"></script-->
 		<!--script src="/js/angular-dragula.min.js"></script-->
+
 		<script src="/js/ui-bootstrap-custom-2.1.4.min.js"></script>
 		<script src="/js/ui-bootstrap-custom-tpls-2.1.4.min.js"></script>
+
 		<script src="/services/utilsService.js"></script>
+		<script src="/services/dataService.js"></script>
+		<script src="/services/undoServiceFactory.js"></script>
+		<script src="/services/report2Service.js"></script>
 		<script src="/services/report3Service.js"></script>
-		<script src="/app.js"></script>
+		<script src="/services/report4Service.js"></script>
+
 		<script src="/controllers/mainController.js"></script>
 		<script src="/controllers/report1Controller.js"></script>
 		<script src="/controllers/report2Controller.js"></script>
 		<script src="/controllers/report3Controller.js"></script>
-		<script src="/services/dataService.js"></script>
-		<script src="/services/undoServiceFactory.js"></script>
-		<script src="/services/report2Service.js"></script>
+		<script src="/controllers/report4Controller.js"></script>
+
+		<script src="/app.js"></script>
     </head>
     <body ng-app="Main">
 		<div ng-view></div>

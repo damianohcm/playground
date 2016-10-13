@@ -17,19 +17,19 @@
        "subTitle": "Lorem ipsum blah blah"
    }, {
        "key": "report3",
-       "position": 1,
+       "position": 2,
        "show": true,
        "css": "report-menu report-3",
        "icon": "icon-report-3",
-       "title": "Report 3",
+       "title": "Learning Path Report",
        "subTitle": "Lorem ipsum blah blah"
    }, {
        "key": "report4",
-       "position": 1,
+       "position": 3,
        "show": true,
        "css": "report-menu report-4",
        "icon": "icon-report-4",
-       "title": "Report 4",
+       "title": "New and Trending Report",
        "subTitle": "Lorem ipsum blah blah"
    }]
 }
